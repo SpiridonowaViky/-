@@ -1,12 +1,13 @@
-﻿Console.WriteLine("Введите трехзначное число:");
-int number = int.Parse(Console.ReadLine());
+﻿Console.WriteLine("Введите число:");
+string str = Console.ReadLine();
+int n = str.Length;
 
-while (number < 100 || number > 999)
-    {
-        Console.WriteLine("Данное число не трехзначное,введите трехзначное число:");
-        number = int.Parse(Console.ReadLine()); 
-    }
-    int number1 = number / 10;
-    int number2 = number1 % 10;
+if (n > 2)
+{
+    Console.WriteLine(str [2]);
+}
+else
+{
+   Console.WriteLine("Третьей цифры нет");
+};
 
-    Console.WriteLine("Второй символ введенного числа = " + number2);
